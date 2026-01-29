@@ -1,56 +1,109 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/tron-lab/favicon.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vanilla App Template</title>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tron Lab | Карьерный апгрейд и инновации</title>
+    <link rel="icon" href="img/favicon.svg" type="image/svg+xml">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&family=Syne:wght@700;800&display=swap" rel="stylesheet">
+
+    <script src="https://unpkg.com/lucide@latest"></script>
     <script type="module" crossorigin src="/tron-lab/index.js"></script>
-    <link rel="stylesheet" crossorigin href="/tron-lab/assets/styles-guStct1H.css">
+    <link rel="stylesheet" crossorigin href="/tron-lab/assets/styles-iOmVqld2.css">
   </head>
   <body>
     <header class="header">
-  <div class="container">
-    <nav class="nav">
-      <a class="nav-logo" href="./index.html" aria-label="Site logo">
-        <svg class="nav-logo-icon" width="100" height="30">
-          <use href="{=$icon-path}"></use>
-        </svg>
+  <nav class="container nav">
+      <a href="/" class="logo">
+          Tron<span>Lab</span>
       </a>
-      <ul class="nav-list">
-        <li class="nav-item">
-          <a class="nav-link {=$highlight-act}" href="./page-2.html">Page 2</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link {=$highlight-curr}" href="./page-3.html">Page 3</a>
-        </li>
+      <ul class="nav-menu">
+          <li><a href="#hero">Главная</a></li>
+          <li><a href="#about">О платформе</a></li>
+          <li><a href="#benefits">Преимущества</a></li>
+          <li><a href="#innovations">Инновации</a></li>
+          <li><a href="#blog">Блог</a></li>
+          <li><a href="#contact" class="btn-nav">Начать</a></li>
       </ul>
-    </nav>
-  </div>
+      <button class="burger" id="burger">
+          <span></span>
+      </button>
+  </nav>
 </header>
-
 
     <main>
       <!-- Loads the specified .html file -->
-      
+      <section class="hero" id="hero">
+  <div class="container hero-wrapper">
+      <div class="hero-content">
+          <span class="hero-subtitle">Инновационная технология роста</span>
+          <h1 class="hero-title">
+              Постройте карьеру, <br>
+              <span>которая работает на вас</span>
+          </h1>
+          <p class="hero-description">
+              Переосмыслите подход к развитию с помощью экспертной поддержки и AI-инструментов для реальных задач. Платформа года уже доступна в Европе.
+          </p>
+          <div class="hero-btns">
+              <a href="#contact" class="btn-primary">Бесплатная консультация</a>
+              <a href="#about" class="btn-secondary">Узнать детали</a>
+          </div>
+      </div>
+      <div class="hero-visual">
+          <div class="abstract-shape"></div>
+          <div class="hero-card">
+              <div class="card-line"></div>
+              <div class="card-content">
+                  <p>Career Growth</p>
+                  <span class="percent">+145%</span>
+              </div>
+          </div>
+      </div>
+  </div>
+</section>
     </main>
 
     <footer class="footer">
-  <div class="container">
-    <p class="footer-desc">
-      Made with ✨ by
-      <a
-        class="footer-link"
-        href="https://goit.global/ua/"
-        target="_blank"
-        rel="noopener noreferrer"
-      >
-        GoIT team
-      </a>
-    </p>
+  <div class="container footer-grid">
+      <div class="footer-brand">
+          <a href="/" class="logo">Tron<span>Lab</span></a>
+          <p class="footer-tagline">Технологии, которые работают на вашу карьеру.</p>
+      </div>
+
+      <div class="footer-nav">
+          <h4>Навигация</h4>
+          <ul>
+              <li><a href="#hero">Главная</a></li>
+              <li><a href="#about">О платформе</a></li>
+              <li><a href="#innovations">Инновации</a></li>
+          </ul>
+      </div>
+
+      <div class="footer-legal">
+          <h4>Документы</h4>
+          <ul>
+              <li><a href="privacy.html">Privacy Policy</a></li>
+              <li><a href="cookies.html">Cookies</a></li>
+              <li><a href="terms.html">Terms of Use</a></li>
+              <li><a href="disclaimer.html">Disclaimer</a></li>
+              <li><a href="contact.html">Contact</a></li>
+          </ul>
+      </div>
+
+      <div class="footer-contacts">
+          <h4>Италия</h4>
+          <p><i data-lucide="phone" size="16"></i> <a href="tel:+390697637805">+39 06 9763 7805</a></p>
+          <p><i data-lucide="mail" size="16"></i> <a href="mailto:hello@tron-lab.life">hello@tron-lab.life</a></p>
+          <p><i data-lucide="map-pin" size="16"></i> Via dei Condotti, 61, 00187 Roma RM</p>
+      </div>
+  </div>
+  <div class="footer-bottom container">
+      <p>&copy; 2026 Tron Lab. Платформа уже доступна в Европе.</p>
   </div>
 </footer>
-
 
   </body>
 </html>
